@@ -1,16 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fbfbfb;
+  background-color: #fbfbfb;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
+p,
+li {
   margin: 0;
+  padding: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
 
 ul {
   margin: 0;
@@ -19,8 +32,8 @@ ul {
 }
 
 a {
-  color: currentColor;
   text-decoration: none;
+  cursor: pointer;
 }
 
 button {
@@ -31,4 +44,5 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
