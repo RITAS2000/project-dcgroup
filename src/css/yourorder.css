@@ -1,0 +1,158 @@
+.yourorder {
+  padding: 100px;
+  background-color: #576f35;
+}
+
+.title-container {
+  width: 751px;
+  padding-bottom: 52px;
+}
+
+.title-order {
+  text-align: left;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  padding-bottom: 24px;
+}
+
+.text-order {
+  line-height: 125%;
+  color: #fbfbfb;
+}
+
+.title-order-span {
+  color: #d4bfc4;
+}
+
+.form {
+  border-radius: 30px;
+  padding: 52px 48px;
+  width: 524px;
+  height: 592px;
+  background: #fbfbfb;
+}
+
+.form-section {
+  width: 428px;
+  height: 488px;
+}
+
+.form-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+  padding-bottom: 52px;
+}
+
+.form-span-one {
+  color: #7a3145;
+}
+
+.form-span-two {
+  color: #576f35;
+}
+
+.name-input {
+  border: 1px solid #858585;
+  border-radius: 30px;
+  padding: 16px 346px 16px 14px;
+  width: 428px;
+  height: 52px;
+  margin-bottom: 16px;
+}
+
+.name-input:hover {
+  border-color: #7a3145;
+}
+
+.name-input::placeholder {
+  line-height: 125%;
+  text-align: center;
+  color: #141414;
+}
+
+.name-input:focus::placeholder {
+  color: transparent;
+}
+
+.email-input {
+  border: 1px solid #858585;
+  border-radius: 30px;
+  padding: 16px 376px 16px 16px;
+  width: 428px;
+  height: 52px;
+  margin-bottom: 16px;
+}
+
+.email-input::placeholder {
+  line-height: 125%;
+  text-align: center;
+  color: #141414;
+}
+
+.email-input:hover {
+  border-color: #7a3145;
+}
+
+.email-input:valid {
+  border-color: #3cbc81;
+}
+
+.email-input:invalid {
+  border-color: #e74a3b;
+}
+
+.email-input:focus::placeholder {
+  color: transparent;
+}
+
+.comment-input {
+  border: 1px solid #858585;
+  border-radius: 15px;
+  padding: 16px 345px 59px 16px;
+  width: 428px;
+  height: 96px;
+  margin-bottom: 24px;
+}
+
+.comment-input::placeholder {
+  line-height: 125%;
+  text-align: center;
+  color: #141414;
+}
+
+.comment-input:focus::placeholder {
+  color: transparent;
+}
+
+.form-but {
+  border-radius: 30px;
+  padding: 16px 191px;
+  width: 428px;
+  height: 52px;
+  background: #7a3145;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 111%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  border: none;
+}
+
+.form-but:hover {
+  background: #d4bfc4;
+  color: #7a3145;
+}
+
+.form-but:active {
+  background: #fbfbfb;
+  color: #7a3145;
+}
