@@ -22,3 +22,28 @@ images.forEach(image => {
         textarea.value = image.alt;
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+  // Мобільна версія
+  const mobileImage = document.getElementById("mobile-image");
+  const mobileImages = ["image1.jpg", "image2.jpg", "image3.jpg"];
+  let mobileIndex = 0;
+
+  mobileImage.addEventListener("click", () => {
+    mobileIndex = (mobileIndex + 1) % mobileImages.length;
+    mobileImage.src = mobileImages[mobileIndex];
+  });
+
+  // Таблет версія
+  const tabletImage1 = document.getElementById("tablet-image-1");
+  const tabletImage2 = document.getElementById("tablet-image-2");
+
+  tabletImage1.addEventListener("click", () => {
+    tabletImage1.classList.toggle("hidden");
+    tabletImage2.classList.toggle("hidden");
+  });
+
+  tabletImage2.addEventListener("click", () => {
+    tabletImage1.classList.toggle("hidden");
+    tabletImage2.classList.toggle("hidden");
+  });
+});
