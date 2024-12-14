@@ -1,0 +1,103 @@
+.howitworks {}
+
+.howitworks-block-image {
+  padding: 40px 0px;
+  background: #7a3145;
+
+
+}
+
+.main-image {
+  border-radius: 30px;
+  width: 335px;
+
+}
+
+.hoitworks-block-order {
+  padding-top: 80px;
+  width: 100%;
+  height: 676px;
+  background: #576f35;
+
+
+}
+
+
+
+.howitworks-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+
+  margin-bottom: 20px;
+}
+
+.howitworks-title-style {
+  color: #d4bfc4;
+}
+
+.howitworks-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #fbfbfb;
+
+  margin-bottom: 40px;
+}
+
+.content-text {}
+
+
+
+.content-text-style {
+  font-weight: 700;
+  color: #141414;
+}
+
+.howitworks-list {
+  counter-reset: list-counter;
+  /* Ініціалізація лічильника */
+}
+
+.howitworks-item {
+  border-radius: 15px;
+  padding: 12px 27px 12px 24px;
+  height: 84px;
+  background: #fbfbfb;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #858585;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.howitworks-item::before {
+  content: counter(list-counter);
+  /* Додаємо номер */
+  counter-increment: list-counter;
+  /* Збільшуємо лічильник */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: #7a3145;
+  border: 5px solid #d4bfc4;
+  border-radius: 50%;
+  color: #fff;
+  /* Білий текст для номера */
+  font-weight: bold;
+  /* Жирний текст */
+  font-size: 16px;
+  /* Розмір шрифту */
+  flex-shrink: 0;
+}
+
+.howitworks-item:not(:last-child) {
+  margin-bottom: 20px;
+}
