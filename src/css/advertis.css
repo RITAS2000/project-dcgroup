@@ -34,3 +34,26 @@
   text-align: left;
   justify-content: center;
 }
+
+@media screen and (min-width: 768px) {
+  .advertis-text {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .advertis-container {
+    padding: 100px 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advertis-container {
+    padding: 100px;
+  }
+  .advertis-text {
+    font-size: 76px;
+    line-height: 76px;
+  }
+  .discount {
+    display: inline;
+  }
+}
