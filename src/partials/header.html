@@ -1,8 +1,10 @@
 <header class="header">
   <div class="container header-container">
-    <svg class="header-logo" width="168" height="16">
-      <use href="../img/sprite.svg#icon-logo"></use>
-    </svg>
+    <div class="logo-container">
+      <svg class="header-logo" width="168" height="16">
+        <use href="../img/sprite.svg#icon-logo"></use>
+      </svg>
+    </div>
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-list-item">
@@ -15,10 +17,12 @@
           <a href="#reviews" class="nav-list-link">Reviews</a>
         </li>
       </ul>
-      <button type="button" class="nav-btn">Shop now</button>
+      <button type="button" class="nav-btn" id="yourorder">Shop now</button>
     </nav>
-    <svg class="nav-menu" width="32" height="32">
-      <use href="../img/sprite.svg#icon-burger"></use>
-    </svg>
+    <button class="nav-menu-btn">
+      <svg class="nav-menu" width="32" height="32">
+        <use href="/img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
   </div>
 </header>
