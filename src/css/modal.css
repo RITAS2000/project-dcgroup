@@ -36,6 +36,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  padding: 0;
 
   display: flex;
   justify-content: center;
@@ -90,6 +91,27 @@
   }
 }
 
+.mobile-menu-button:active {
+  color: #7a3145;
+  background-color: #fbfbfb;
+}
+
+@media only screen and (min-width: 768px) {
+  .button-vegatables {
+    width: 122px;
+  }
+}
+
+.button-reviews {
+  width: 116px;
+}
+
+@media only screen and (min-width: 768px) {
+  .button-reviews {
+    width: 123px;
+  }
+}
+
 .shop-button {
   align-self: center;
   width: 175px;
@@ -110,10 +132,11 @@
 @media only screen and (min-width: 768px) {
   .shop-button {
     width: 157px;
+    padding: 16px 32px;
   }
 }
 
-.active-button:active {
+.shop-button:active {
   color: #7a3145;
   background-color: #fbfbfb;
 }
