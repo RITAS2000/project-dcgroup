@@ -1,4 +1,8 @@
-.howitworks {}
+@media screen and (min-width: 1280px) {
+  .howitworks {
+    display: flex;
+  }
+}
 
 .howitworks-block-image {
   padding: 40px 0px;
@@ -12,6 +16,12 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .howitworks-block-image {
+    width: 50%;
+
+  }
+}
 
 .main-image {
   border-radius: 30px;
@@ -21,6 +31,13 @@
   .main-image {
     width: 640px;
     height: 640px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .main-image {
+    width: 440px;
+    height: 560px;
   }
 }
 
@@ -34,8 +51,16 @@
 @media screen and (min-width: 768px) {
   .howitworks-block-order {
 
-    padding: 100px 154px 0 154px;
+    padding: 100px 130px 0;
 
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .howitworks-block-order {
+
+    padding: 100px 100px 0 100px;
+    width: 50%;
   }
 }
 
@@ -50,6 +75,13 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .howitworks-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
+
 .howitworks-title-style {
   color: #d4bfc4;
 }
@@ -61,6 +93,13 @@
   color: #fbfbfb;
 
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .howitworks-text {
+    font-size: 16px;
+    line-height: 125%;
+  }
 }
 
 .content-text {}
@@ -91,6 +130,13 @@
   gap: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .howitworks-item {
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+
 .howitworks-item::before {
   content: counter(list-counter);
   /* Додаємо номер */
@@ -115,4 +161,15 @@
 
 .howitworks-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .howitworks-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .howitworks-item:last-child {
+    margin-bottom: 100px;
+  }
+
 }
