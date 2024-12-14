@@ -9,7 +9,7 @@ function toggleModal() {
   modal.classList.toggle('is-open');
 }
 
-// Отримуємо всі зображення з класом "clickable-image"
+// Отримуємо зображення з класом "clickable-image"
 const images = document.querySelectorAll('.clickable-image');
 
 // Отримуємо textarea
