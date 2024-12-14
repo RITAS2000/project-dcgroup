@@ -78,6 +78,16 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.43;
+  text-align: center;
+  transition: color 250ms cubic-bezier(0.25, 1, 0.95, 0.55),
+    background-color 250ms cubic-bezier(0.25, 1, 0.95, 0.55);
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu-button {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .shop-button {
@@ -93,4 +103,17 @@
   line-height: 1.11;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  transition: color 250ms cubic-bezier(0.25, 1, 0.95, 0.55),
+    background-color 250ms cubic-bezier(0.25, 1, 0.95, 0.55);
+}
+
+@media only screen and (min-width: 768px) {
+  .shop-button {
+    width: 157px;
+  }
+}
+
+.active-button:active {
+  color: #7a3145;
+  background-color: #fbfbfb;
 }
