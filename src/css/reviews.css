@@ -101,6 +101,7 @@
   }
   .reviews-content {
     flex: 1 1 calc((100% - 24px) / 2);
+    padding: 20px;
   }
 
   .reviews-text {
@@ -121,8 +122,5 @@
 
   .reviews-ul .reviews-content:nth-child(3) {
     display: block;
-  }
-  .reviews-content {
-    padding: 20px;
   }
 }
