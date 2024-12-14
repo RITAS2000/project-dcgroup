@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/src/css/yourorder.css" />
-<section class="yourorder">
+<section class="yourorder" id="yourorder">
   <div class="container-order">
     <div class="title-container">
       <h2 class="title-order">
@@ -24,6 +24,7 @@
           type="text"
           name="user-name"
           placeholder="Full Name"
+          pattern="([A-z0-9._-]{1,})@([A-z0-9._-]{1,})\.([A-z]{2,8})"
           required
         />
         <input
@@ -31,23 +32,36 @@
           type="email"
           name="user-email"
           placeholder="Email"
+          pattern="([A-z0-9._-]{1,})@([A-z0-9._-]{1,})\.([A-z]{2,8})"
           required
         />
         <textarea
           class="comment-input"
           placeholder="Comment"
           name="user-comment"
+          pattern="([A-z0-9._-]{1,})@([A-z0-9._-]{1,})\.([A-z]{2,8})"
+          required
         ></textarea>
         <button class="form-but" type="submit">Send</button>
       </div>
-      <div class="image-order">
-        <img src="https://via.placeholder.com/400" alt="Fresh Harvest" />
+      <div class="social-order">
+        <picture>
+    <source srcset="img/yourorder/desktop@2x.png" media="(min-width: 1280px) and (min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 192dpi)">
+    <source srcset="img/yourorder/desktop@1x.png" media="(min-width: 1280px)">
+    <source srcset="img/yourorder/tablet@2x.png" media="(min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
+    <source srcset="img/yourorder/tablet@1x.png" media="(min-width: 768px)">
+    <source srcset="img/yourorder/mobile@2x.png" media="(min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+    <img class="image-order" src="img/yourorder/mobile@1x.png" alt="Fresh Harvest">
+</picture>
+
+      <p class="social-text">Follow us on our social networks:</p>
+      <div class="networks-order">
+        <ul class="social-media">
+          <li class="social-item"><a class="link-order" href="https://www.instagram.com/goitclub/">Instagram</a></li>/
+          <li class="social-item"><a class="link-order" href="https://www.facebook.com/goITclub/">Facebook</a></li>/
+          <li class="social-item"><a class="link-order" href="https://www.youtube.com/c/GoIT">YouTube</a></li>
+      </ul>
       </div>
-    </div>
-    <div class="social-order">
-      <p>Follow us on our social networks:</p>
-      <a href="#">Instagram</a> / <a href="#">Facebook</a> /
-      <a href="#">YouTube</a>
-    </div>
-  </div>
+      </div>
+</div>
 </section>
