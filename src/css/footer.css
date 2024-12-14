@@ -1,1 +1,113 @@
-
+/* Styles for Mobile devices */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 80px;
+  padding: 40px 20px;
+  width: 375px;
+  background: #7a3145;
+}
+.box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+.logo-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 14px;
+}
+.items-box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.links-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 14px;
+}
+.address-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 14px;
+  width: 215px;
+}
+.last-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+.policy-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+}
+.svg-logo {
+  fill: #fbfbfb;
+  width: 168px;
+  height: 16px;
+}
+.logo-descr {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.link {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+.ul-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 14px;
+}
+.link-tell {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+}
+.address {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+}
+.option-link {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+}
+.mini-logo {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+}
