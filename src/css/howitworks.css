@@ -59,7 +59,7 @@
 @media screen and (min-width: 1280px) {
   .howitworks-block-order {
 
-    padding: 100px 100px 0 100px;
+    padding: 100px 40px 0;
     width: 50%;
   }
 }
@@ -81,6 +81,14 @@
     margin-bottom: 24px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .howitworks-title {
+    font-size: 32px;
+  }
+
+}
+
 
 .howitworks-title-style {
   color: #d4bfc4;
@@ -145,8 +153,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
   background-color: #7a3145;
   border: 5px solid #d4bfc4;
   border-radius: 50%;
