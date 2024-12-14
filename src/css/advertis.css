@@ -1,0 +1,36 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advertis-container {
+  display: flex;
+  padding: 80px 20px;
+  gap: 10px;
+}
+
+.advertis-text {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.discount {
+  border-radius: 12px;
+  background-color: #576f35;
+  color: white;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+}
