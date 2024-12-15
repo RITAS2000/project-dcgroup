@@ -57,11 +57,18 @@
 .nav-list-item:hover,
 .nav-list-item:focus {
   background: #d4bfc4;
-  color: #7a3145;
 }
 
 .nav-list-item:active {
   background: #fbfbfb;
+}
+
+.nav-list-item:hover .nav-list-link,
+.nav-list-item:focus .nav-list-link {
+  color: #7a3145;
+}
+
+.nav-list-item:active .nav-list-link {
   color: #7a3145;
 }
 
