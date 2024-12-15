@@ -62,16 +62,16 @@
 .mobile-menu-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
   margin-bottom: auto;
-  text-align: center;
 }
 
-.mobile-menu-button {
+.mobile-menu-item {
   width: 118px;
   padding-top: 12px;
-  color: #fbfbfb;
   padding-bottom: 12px;
+  color: #fbfbfb;
   background-color: transparent;
   border-radius: 12px;
   border: 1px solid #fbfbfb;
@@ -80,34 +80,41 @@
   font-weight: 500;
   line-height: 1.43;
   text-align: center;
-  transition: color 250ms cubic-bezier(0.25, 1, 0.95, 0.55),
-    background-color 250ms cubic-bezier(0.25, 1, 0.95, 0.55);
+  transition: background-color 250ms cubic-bezier(0.25, 1, 0.95, 0.55);
 }
 
 @media only screen and (min-width: 768px) {
-  .mobile-menu-button {
+  .mobile-menu-item {
     font-size: 16px;
     line-height: 1.25;
   }
 }
 
-.mobile-menu-button:active {
-  color: #7a3145;
+.mobile-menu-item:active {
   background-color: #fbfbfb;
 }
 
+.mobile-menu-link {
+  color: #fbfbfb;
+  transition: color 250ms cubic-bezier(0.25, 1, 0.95, 0.55);
+}
+
+.mobile-menu-item:active .mobile-menu-link {
+  color: #7a3145;
+}
+
 @media only screen and (min-width: 768px) {
-  .button-vegatables {
+  .item-vegatables {
     width: 122px;
   }
 }
 
-.button-reviews {
+.item-reviews {
   width: 116px;
 }
 
 @media only screen and (min-width: 768px) {
-  .button-reviews {
+  .item-reviews {
     width: 123px;
   }
 }
@@ -139,4 +146,5 @@
 .shop-button:active {
   color: #7a3145;
   background-color: #fbfbfb;
+ 
 }
