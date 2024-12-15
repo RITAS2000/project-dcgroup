@@ -69,7 +69,7 @@
 }
 
 .vegetables-img {
-     width: 280px;
+    max-width: 280px;
     height: 240px;
 }
 
