@@ -35,10 +35,16 @@
   border-radius: 24px;
   padding: 20px 16px;
   width: 100%;
+  background: #fbfbfb;
 }
 
 .reviews-img {
   margin-bottom: 24px;
+}
+
+.reviews-pictures {
+  background: #e0e0e0;
+  border-radius: 100px;
 }
 
 .reviews-wrap {
