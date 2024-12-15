@@ -65,12 +65,42 @@
 
 .main-image {
   border-radius: 30px;
+  background:
+    linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+
+    url("/img/howitworks/women-cooking.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+@media (min-resolution: 192dpi) {
+  .main-image {
+    background:
+      linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+
+      url("/img/howitworks/women-cooking@2x.jpg") no-repeat center center;
+    background-size: cover;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .main-image {
     width: 640px;
+    background:
+      linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
 
+      url("/img/howitworks/women-cooking-tablet.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .main-image {
+    width: 640px;
+    background:
+      linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+
+      url("/img/howitworks/women-cooking-tablet@2x.jpg") no-repeat center center;
+    background-size: cover;
   }
 }
 
@@ -78,6 +108,24 @@
   .main-image {
     width: 440px;
     height: 560px;
+    background:
+      linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+
+      url("/img/howitworks/women-cooking-desktop.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+
+  .main-image {
+    width: 440px;
+    height: 560px;
+    background:
+      linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+
+      url("/img/howitworks/women-cooking-desktop@2x.jpg") no-repeat center center;
+    background-size: cover;
   }
 }
 
