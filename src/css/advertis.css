@@ -1,3 +1,10 @@
+@media screen and (min-width: 1280px) {
+  .container {
+    min-width: 1280px;
+    padding: 0 100px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -20,6 +27,9 @@
   text-transform: uppercase;
   display: flex;
   flex-wrap: wrap;
+}
+
+.advertis {
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -38,13 +48,16 @@
     font-size: 64px;
     line-height: 64px;
   }
+  .advertis {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .advertis-text {
     font-size: 76px;
     line-height: 76px;
-    padding: 100px;
   }
   .discount {
   }
