@@ -12,18 +12,16 @@
   overflow: hidden;
 }
 
-.advertis-container {
-  display: flex;
-  padding: 80px 20px;
-  gap: 10px;
-}
-
 .advertis-text {
   font-weight: 600;
   font-size: 48px;
   line-height: 52px;
   color: black;
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .discount {
@@ -40,20 +38,17 @@
     font-size: 64px;
     line-height: 64px;
   }
-  .advertis-container {
-    padding: 100px 32px;
-  }
 }
 
 @media screen and (min-width: 1280px) {
-  .advertis-container {
-    padding: 100px;
-  }
   .advertis-text {
     font-size: 76px;
     line-height: 76px;
+    padding: 100px;
   }
   .discount {
-    display: inline;
+  }
+  .advertis {
+    padding: 100px;
   }
 }
