@@ -5,6 +5,10 @@
   }
 }
 
+.line-break {
+  display: none;
+}
+
 .advertis-text {
   font-weight: 600;
   font-size: 48px;
@@ -14,9 +18,6 @@
   letter-spacing: -0.01em;
 }
 
-.responsive-space {
-  display: none;
-}
 .advertis {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -42,7 +43,7 @@
 @media screen and (min-width: 1280px) {
   .advertis-text {
     font-size: 76px;
-    display: inline;
+    display: inline-block;
   }
   .discount {
     display: inline-block;
@@ -50,7 +51,7 @@
     width: 808px;
     text-align: center;
   }
-  .responsive-space {
+  .line-break {
     display: inline;
   }
 }
