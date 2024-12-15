@@ -380,7 +380,7 @@
       </p>
     </div>
     <ul class="reviews-ul">
-      <li class="reviews-content">
+      <li class="reviews-content" id="image-item">
         <div class="reviews-img">
           <img
             class="reviews-pictures"
@@ -400,7 +400,7 @@
           </p>
         </div>
       </li>
-      <li class="reviews-content">
+      <li class="reviews-content" id="image-item">
         <div class="reviews-img">
           <img
             class="reviews-pictures"
@@ -420,7 +420,7 @@
           </p>
         </div>
       </li>
-      <li class="reviews-content">
+      <li class="reviews-content" id="image-item">
         <div class="reviews-img">
           <img
             class="reviews-pictures"
@@ -444,8 +444,7 @@
   </div>
 </section>
 
-      <link rel="stylesheet" href="/src/css/yourorder.css" />
-<section class="yourorder" id="yourorder">
+      <section class="yourorder" id="yourorder">
   <div class="container">
     <div class="title-container">
       <h2 class="title-order">
@@ -465,51 +464,40 @@
           Fill out <span class="form-span-two">the form</span> below and we will
           contact you !
         </h3>
-        <input
-          class="name-input"
-          type="text"
-          name="user-name"
-          placeholder="Full Name"
-          pattern="([\-a-zA-Z']{2,20})" required
-        />
-        <input
-          class="email-input"
-          type="email"
-          name="user-email"
-          placeholder="Email"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required
-        />
-        <textarea
-          class="comment-input"
-          placeholder="Comment"
-          name="user-comment"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{5,500})"
-          required
-        ></textarea>
+        <input class="name-input" type="text" name="user-name" placeholder="Full Name" pattern="([\-a-zA-Z']{2,20})"
+          required />
+        <input class="email-input" type="email" name="user-email" placeholder="Email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
+        <textarea id="text-area" class="comment-input" placeholder="Comment" name="user-comment"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{5,500})" required></textarea>
         <button class="form-but" type="submit">Send</button>
       </div>
       <div class="social-order">
         <picture class="image-wrapper">
-    <source srcset="/project-dcgroup/assets/desktop@2x-Dap4ZNgC.png" media="(min-width: 1280px) and (min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 192dpi)">
-    <source srcset="/project-dcgroup/assets/desktop@1x-LrOg6Dai.png" media="(min-width: 1280px)">
-    <source srcset="/project-dcgroup/assets/tablet@2x-BHZZnBXL.png" media="(min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
-    <source srcset="/project-dcgroup/assets/tablet@1x-kSr8qpP2.png" media="(min-width: 768px)">
-    <source srcset="/project-dcgroup/assets/mobile@2x-C7dbWY4y.png" media="(min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
-    <img class="image-order" src="/project-dcgroup/assets/mobile@1x-BrP7j3OA.png" alt="Fresh Harvest">
-</picture>
+          <source srcset="/project-dcgroup/assets/desktop@2x-Dap4ZNgC.png"
+            media="(min-width: 1280px) and (min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 192dpi)">
+          <source srcset="/project-dcgroup/assets/desktop@1x-LrOg6Dai.png" media="(min-width: 1280px)">
+          <source srcset="/project-dcgroup/assets/tablet@2x-BHZZnBXL.png"
+            media="(min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
+          <source srcset="/project-dcgroup/assets/tablet@1x-kSr8qpP2.png" media="(min-width: 768px)">
+          <source srcset="/project-dcgroup/assets/mobile@2x-C7dbWY4y.png" media="(min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+          <img class="image-order" src="/project-dcgroup/assets/mobile@1x-BrP7j3OA.png" alt="Fresh Harvest">
+        </picture>
 
-      <p class="social-text">Follow us on our social networks:</p>
-      <div class="networks-order">
-        <ul class="social-media">
-          <li class="social-item"><a class="link-order" target="_blank" href="https://www.instagram.com/goitclub/">Instagram</a></li>/
-          <li class="social-item"><a class="link-order" target="_blank" href="https://www.facebook.com/goITclub/">Facebook</a></li>/
-          <li class="social-item"><a class="link-order" target="_blank" href="https://www.youtube.com/c/GoIT">YouTube</a></li>
-      </ul>
+        <p class="social-text">Follow us on our social networks:</p>
+        <div class="networks-order">
+          <ul class="social-media">
+            <li class="social-item"><a class="link-order" target="_blank"
+                href="https://www.instagram.com/goitclub/">Instagram</a></li>/
+            <li class="social-item"><a class="link-order" target="_blank"
+                href="https://www.facebook.com/goITclub/">Facebook</a></li>/
+            <li class="social-item"><a class="link-order" target="_blank"
+                href="https://www.youtube.com/c/GoIT">YouTube</a></li>
+          </ul>
+        </div>
       </div>
-      </div>
-</div>
+    </div>
 </section>
-
     </main>
     
 
