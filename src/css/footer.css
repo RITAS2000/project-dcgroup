@@ -1,1 +1,250 @@
+/* Styles for Mobile devices */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 40px 0;
+  background: #7a3145;
+}
+.box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+.logo-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 14px;
+}
+.items-box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.links-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 14px;
+}
+.address-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 14px;
+  width: 215px;
+}
+.last-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+.policy-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+}
+.svg-logo {
+  fill: #fbfbfb;
+  width: 168px;
+  height: 16px;
+}
+.logo-descr {
+  font-size: 14px;
+  line-height: 1.43;
+}
+.link {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+.ul-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 14px;
+}
+.link-tell {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+}
+.address {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+}
+.option-link {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+}
+.mini-logo {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+}
+a:focus {
+  color: #3cbc81;
+}
 
+/* Styles for Tablet devices */
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 31px 0 32px;
+  }
+  .footer {
+    padding: 32px 0;
+  }
+  .box {
+    flex-direction: row;
+    gap: 212px;
+    margin-bottom: 100px;
+  }
+  .logo-box {
+    gap: 24px;
+  }
+  .links-box {
+    width: 228px;
+    gap: 24px;
+  }
+  .last-box {
+    flex-direction: row;
+    gap: 318px;
+  }
+  .address-box {
+    gap: 24px;
+  }
+  .items-box {
+    gap: 64px;
+  }
+  .svg-logo {
+    width: 216px;
+    height: 20px;
+  }
+  .logo-descr {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 265px;
+  }
+  .ul-links {
+    gap: 24px;
+  }
+  .link-tell {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .address {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .option-link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .mini-logo {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+/* Styles for Desktop devices */
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+  .footer {
+    padding: 52px 0;
+    gap: 124px;
+  }
+  .box {
+    flex-direction: row;
+    gap: 250px;
+    /*margin-bottom: 124px;*/
+  }
+  .logo-box {
+    gap: 24px;
+  }
+  .items-box {
+    flex-direction: row;
+    gap: 124px;
+  }
+  .links-box {
+    gap: 24px;
+  }
+  .address-box {
+    gap: 24px;
+    width: 216px;
+  }
+  .last-box {
+    flex-direction: row;
+    gap: 686px;
+  }
+  .policy-box {
+    gap: 12px;
+  }
+  .svg-logo {
+    width: 216px;
+    height: 20px;
+  }
+  .logo-descr {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .ul-links {
+    gap: 24px;
+  }
+  .link-tell {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .address {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .option-link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .mini-logo {
+    font-size: 16px;
+    line-height: 1.25;
+    color: #d4bfc4;
+  }
+  a:focus {
+    color: #3cbc81;
+  }
+  a:hover {
+    color: #3cbc81;
+  }
+}
