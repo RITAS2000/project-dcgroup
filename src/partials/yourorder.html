@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/src/css/yourorder.css" />
 <section class="yourorder" id="yourorder">
-  <div class="container-order">
+  <div class="container">
     <div class="title-container">
       <h2 class="title-order">
         Fresh <span class="title-order-span">Harvest</span> Box has got you
@@ -24,22 +24,20 @@
           type="text"
           name="user-name"
           placeholder="Full Name"
-          pattern="([A-z0-9._-]{1,})@([A-z0-9._-]{1,})\.([A-z]{2,8})"
-          required
+          pattern="([\-a-zA-Z']{2,20})" required
         />
         <input
           class="email-input"
           type="email"
           name="user-email"
           placeholder="Email"
-          pattern="([A-z0-9._-]{1,})@([A-z0-9._-]{1,})\.([A-z]{2,8})"
-          required
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required
         />
         <textarea
           class="comment-input"
           placeholder="Comment"
           name="user-comment"
-          pattern="([A-z0-9._-]{1,})@([A-z0-9._-]{1,})\.([A-z]{2,8})"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{5,500})"
           required
         ></textarea>
         <button class="form-but" type="submit">Send</button>
@@ -57,9 +55,9 @@
       <p class="social-text">Follow us on our social networks:</p>
       <div class="networks-order">
         <ul class="social-media">
-          <li class="social-item"><a class="link-order" href="https://www.instagram.com/goitclub/">Instagram</a></li>/
-          <li class="social-item"><a class="link-order" href="https://www.facebook.com/goITclub/">Facebook</a></li>/
-          <li class="social-item"><a class="link-order" href="https://www.youtube.com/c/GoIT">YouTube</a></li>
+          <li class="social-item"><a class="link-order" target="_blank" href="https://www.instagram.com/goitclub/">Instagram</a></li>/
+          <li class="social-item"><a class="link-order" target="_blank" href="https://www.facebook.com/goITclub/">Facebook</a></li>/
+          <li class="social-item"><a class="link-order" target="_blank" href="https://www.youtube.com/c/GoIT">YouTube</a></li>
       </ul>
       </div>
       </div>
