@@ -1,9 +1,4 @@
-@media screen and (min-width: 1280px) {
-  .container {
-    min-width: 1280px;
-    padding: 0 100px;
-  }
-}
+
 
 .line-break {
   display: none;
