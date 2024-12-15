@@ -1,0 +1,295 @@
+.box {
+  width: 100%;
+  flex: 1;
+}
+
+.howitworks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1280px) {
+  .howitworks {
+    flex-direction: row;
+    justify-content: center;
+    background-color: #7a3145;
+  }
+
+  .box {
+    width: 50%;
+  }
+
+  .box-red {
+    background-size: cover;
+    background-position: center left;
+  }
+
+  .box-green {
+    background-size: cover;
+    background-position: center right;
+  }
+}
+
+.tex {
+  width: 335px;
+}
+
+.howitworks-block-image {
+  padding: 40px 0px;
+}
+
+.box-red {
+  background: #7A3145;
+}
+
+.box-green {
+  background: #576F35;
+}
+
+@media screen and (min-width: 768px) {
+  .howitworks-block-image {
+    padding: 100px 64px;
+
+
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .howitworks-block-image {
+    display: flex;
+    justify-content: flex-end;
+    padding: 100px;
+
+  }
+}
+
+.main-image {
+  border-radius: 30px;
+  background:
+    linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+
+    url("/img/howitworks/women-cooking.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+@media (min-resolution: 192dpi) {
+  .main-image {
+    background:
+      linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+
+      url("/img/howitworks/women-cooking@2x.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-image {
+    width: 640px;
+    background:
+      linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+
+      url("/img/howitworks/women-cooking-tablet.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .main-image {
+    width: 640px;
+    background:
+      linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+
+      url("/img/howitworks/women-cooking-tablet@2x.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .main-image {
+    width: 440px;
+    height: 560px;
+    background:
+      linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+
+      url("/img/howitworks/women-cooking-desktop.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+
+  .main-image {
+    width: 440px;
+    height: 560px;
+    background:
+      linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
+
+      url("/img/howitworks/women-cooking-desktop@2x.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.howitworks-block-order {
+  display: flex;
+  padding: 80px 20px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .howitworks-block-order {
+
+    padding: 100px 130px;
+
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .howitworks-block-order {
+
+    display: flex;
+    padding: 100px;
+    height: auto;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tex {
+    width: 440px;
+    flex-direction: column;
+  }
+}
+
+.howitworks-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .howitworks-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .howitworks-title {
+    font-size: 32px;
+  }
+
+}
+
+
+.howitworks-title-style {
+  color: #d4bfc4;
+}
+
+.howitworks-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #fbfbfb;
+
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .howitworks-text {
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .howitworks-text {
+    margin-bottom: 104px;
+  }
+}
+
+
+
+
+.content-text-style {
+  font-weight: 700;
+  color: #141414;
+}
+
+.howitworks-list {
+  counter-reset: list-counter;
+  /* Ініціалізація лічильника */
+}
+
+.howitworks-item {
+  border-radius: 15px;
+  padding: 12px 27px 12px 24px;
+  height: 84px;
+  background: #fbfbfb;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #858585;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .howitworks-item {
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .howitworks-item {
+    height: 76px;
+  }
+}
+
+.howitworks-item::before {
+  content: counter(list-counter);
+  /* Додаємо номер */
+  counter-increment: list-counter;
+  /* Збільшуємо лічильник */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  background-color: #7a3145;
+  border: 5px solid #d4bfc4;
+  border-radius: 50%;
+  color: #fff;
+  /* Білий текст для номера */
+  font-weight: bold;
+  /* Жирний текст */
+  font-size: 16px;
+  /* Розмір шрифту */
+  flex-shrink: 0;
+}
+
+.howitworks-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .howitworks-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+
+}
+@media  screen and (min-width: 1280px) {
+  .howitworks-item {
+    padding: 18px 15px 18px 24px;
+  }
+  
+}
