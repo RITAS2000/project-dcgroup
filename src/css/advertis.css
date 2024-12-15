@@ -10,12 +10,13 @@
   font-size: 48px;
   color: black;
   text-transform: uppercase;
-  display: flex;
-  flex-wrap: wrap;
   line-height: 1;
   letter-spacing: -0.01em;
 }
 
+.responsive-space {
+  display: none;
+}
 .advertis {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -25,9 +26,7 @@
   border-radius: 12px;
   background-color: #576f35;
   color: white;
-  display: flex;
-  text-align: left;
-  justify-content: center;
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
@@ -46,6 +45,12 @@
     display: inline;
   }
   .discount {
+    display: inline-block;
+    height: 84px;
+    width: 808px;
+    text-align: center;
+  }
+  .responsive-space {
     display: inline;
   }
 }
