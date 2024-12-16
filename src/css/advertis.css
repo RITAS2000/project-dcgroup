@@ -67,7 +67,7 @@
 }
 
 /* Медіа запит для зменшення шрифта при ширині менше 320px */
-@media screen and (min-width: 0px) and (max-wigth: 330px) {
+@media screen and (min-width: 0px) and (max-width: 330px) {
   .advertis-text {
     font-size: 30px;
   }

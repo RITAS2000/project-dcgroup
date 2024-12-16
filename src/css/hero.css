@@ -72,7 +72,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     .hero-heading {
         font-size: 76px;
         margin-bottom: 24px;
@@ -80,7 +80,7 @@
     }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 1280px) {
     .hero-heading {
         max-width: 502px;
         margin-bottom: 128px;
