@@ -12,7 +12,26 @@
     color: #fbfbfb;
     margin-bottom: 20px;
 }
+/* Медіа запит для зменшення шрифта при ширині менше 350px */
+@media screen and (min-width: 346px) and (max-width: 360px) {
+    .title-vegetables {
+        font-size: 44px;
+    }
+}
 
+/* Медіа запит для зменшення шрифта при ширині менше 335px */
+@media screen and (min-width: 331px) and (max-width: 345px) {
+    .title-vegetables {
+        font-size: 36px;
+    }
+}
+
+/* Медіа запит для зменшення шрифта при ширині менше 320px */
+@media screen and (min-width: 0px) and (max-wigth: 330px) {
+    .title-vegetables {
+        font-size: 30px;
+    }
+}
 .title-part {
     color: #d4bfc4;
 }
