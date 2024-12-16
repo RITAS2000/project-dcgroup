@@ -298,6 +298,7 @@
   background: #7a3145;
   border: none;
   margin: 0;
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -436,6 +437,7 @@
   line-height: 143%;
   color: #d4bfc4;
   margin-bottom: 16px;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -465,6 +467,7 @@
 
 .link-order {
   color: #fbfbfb;
+  outline: none;
 }
 
 .social-item {
