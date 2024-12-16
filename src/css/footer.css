@@ -179,10 +179,7 @@ a:focus {
 /* Styles for Desktop devices */
 
 @media only screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 100px;
-  }
+
   .footer {
     padding: 52px 0;
     gap: 124px;
@@ -246,5 +243,12 @@ a:focus {
   }
   a:hover {
     color: #3cbc81;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  .container {
+    min-width: 1280px;
+    padding: 0 100px;
   }
 }

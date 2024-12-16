@@ -1,4 +1,5 @@
 .hero {
+    position: relative;
     padding-top: 100px;
     width: 100%;
     background-color: #576f35;
@@ -20,8 +21,11 @@
 @media only screen and (min-width: 1280px) {
     .hero {
       padding-top: 0;
+      display: flex;
+      justify-content: center;
     }
     .hero .container{
+        min-width: 540px;
         width: 504px;
         padding-top: 232px;
         padding-bottom: 52px;
@@ -35,6 +39,7 @@
         flex-direction: row;
         justify-content: center;
         gap: 36px;
+        width: 1280px;
 
     }
 }
