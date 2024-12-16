@@ -7,7 +7,7 @@ modalBtnClose.addEventListener('click', toggleModal);
 
 function toggleModal() {
   modal.classList.toggle('is-open');
-}
+};
 
 const images = document.querySelectorAll('.clickable-image');
 
@@ -23,4 +23,4 @@ images.forEach(image => {
 });
   function scrollToSection() {
     document.getElementById('yourorder').scrollIntoView({ behavior: 'smooth' });
-}
+};
