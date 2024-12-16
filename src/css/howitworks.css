@@ -1,7 +1,4 @@
-.box {
-  width: 100%;
-  flex: 1;
-}
+
 
 .howitworks {
   display: flex;
@@ -14,11 +11,7 @@
   .howitworks {
     flex-direction: row;
     justify-content: center;
-    background-color: #7a3145;
-  }
-
-  .box {
-    width: 50%;
+    background: linear-gradient(to right, red 50%, blue 50%);
   }
 
   .box-red {
