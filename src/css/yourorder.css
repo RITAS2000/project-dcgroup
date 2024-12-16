@@ -183,14 +183,14 @@
 @media screen and (min-width: 768px) {
   .email-input {
     padding: 16px 15px;
-    width: 440px;
+    max-width: 440px;
     height: 52px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .email-input {
-    width: 428px;
+    max-width: 428px;
   }
 }
 
