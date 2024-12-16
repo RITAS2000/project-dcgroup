@@ -1,6 +1,6 @@
 const modalBtnOpen = document.querySelector('.js-open-modal');
 const modalBtnClose = document.querySelector('.js-close-modal');
-const modal = document.querySelector('.js-modal');
+ const modalBackdrop = document.querySelector('.mobile-menu-backdrop');
 
 modalBtnOpen.addEventListener('click', toggleModal);
 modalBtnClose.addEventListener('click', toggleModal);
