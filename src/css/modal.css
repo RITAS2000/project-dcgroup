@@ -150,3 +150,8 @@
   background-color: #fbfbfb;
  
 }
+.shop-button:focus,
+.shop-button:focus-visible {
+  outline: none;
+  /* Прибирає контур у стані фокусу */
+}
