@@ -34,11 +34,18 @@
 }
 
 .tex {
-  width: 335px;
+  max-width: 335px;
 }
 
 .howitworks-block-image {
   padding: 40px 0px;
+}
+@media screen and (min-width) and (max-width: 360px) {
+  .main-image{
+    width: auto;
+    height: auto;
+  }
+  
 }
 
 .box-red {
@@ -161,7 +168,7 @@
 
 @media screen and (min-width: 768px) {
   .tex {
-    width: 440px;
+    max-width: 440px;
     flex-direction: column;
   }
 }
@@ -251,6 +258,9 @@
     font-size: 16px;
     line-height: 125%;
     padding: 12px 15px 12px 24px;
+
+    
+
   }
 }
 

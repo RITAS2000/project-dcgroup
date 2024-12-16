@@ -52,3 +52,23 @@
     display: inline;
   }
 }
+/* Медіа запит для зменшення шрифта при ширині менше 350px */
+@media screen and (min-width: 346px) and (max-width: 360px) {
+  .advertis-text{
+    font-size: 44px;
+  }
+}
+
+/* Медіа запит для зменшення шрифта при ширині менше 335px */
+@media screen and (min-width: 331px) and (max-width: 345px) {
+  .advertis-text {
+    font-size: 36px;
+  }
+}
+
+/* Медіа запит для зменшення шрифта при ширині менше 320px */
+@media screen and (min-width: 0px) and (max-width: 330px) {
+  .advertis-text {
+    font-size: 30px;
+  }
+}

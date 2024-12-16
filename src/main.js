@@ -20,4 +20,4 @@ images.forEach(image => {
         // Додаємо alt текст до textarea з нового рядка
         textarea.value += (textarea.value ? '\n' : '') + image.alt;
     });
-});
+})

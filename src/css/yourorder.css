@@ -64,7 +64,7 @@
 .form {
   border-radius: 30px;
   padding: 40px 20px;
-  max-width: 335px;
+  width: 100%;
   height: auto;
   background: #fbfbfb;
   display: flex;
@@ -175,7 +175,7 @@
   border: 1px solid #858585;
   border-radius: 30px;
   padding: 14px 16px;
-  width: 295px;
+  max-width: 295px;
   height: 48px;
   margin-bottom: 16px;
 }
@@ -183,14 +183,14 @@
 @media screen and (min-width: 768px) {
   .email-input {
     padding: 16px 15px;
-    width: 440px;
+    max-width: 440px;
     height: 52px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .email-input {
-    width: 428px;
+    max-width: 428px;
   }
 }
 
@@ -298,18 +298,19 @@
   background: #7a3145;
   border: none;
   margin: 0;
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {
   .form-but {
     padding: 16px 191px;
-    width: 440px;
+    max-width: 440px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .form-but {
-    width: 428px;
+    max-width: 428px;
   }
 }
 
@@ -436,6 +437,7 @@
   line-height: 143%;
   color: #d4bfc4;
   margin-bottom: 16px;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -465,6 +467,7 @@
 
 .link-order {
   color: #fbfbfb;
+  outline: none;
 }
 
 .social-item {
