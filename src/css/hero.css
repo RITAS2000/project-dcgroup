@@ -25,13 +25,11 @@
       justify-content: center;
     }
     .hero .container{
-        min-width: 540px;
-        width: 504px;
+        min-width: 504px;
         padding-top: 232px;
         padding-bottom: 52px;
         padding-left: 0;
         padding-right: 0;
-        margin-left:auto;
         margin-right: 0;
     }
     .wrapper {
@@ -122,7 +120,6 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
 @media only screen and (min-width: 1280px) {
     .background-img {
-        margin-right: auto;
         width: 640px;
         height: 796px;
         background-image: url(/img/hero/Imagedesk@1x.jpg);

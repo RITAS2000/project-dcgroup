@@ -131,6 +131,9 @@
 }
 
 .howitworks-block-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 80px 20px;
 }
 
@@ -227,7 +230,6 @@
 .howitworks-item {
   border-radius: 15px;
   padding: 12px 27px 12px 24px;
-  height: 84px;
   background: #fbfbfb;
   font-weight: 500;
   font-size: 14px;
@@ -245,11 +247,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .howitworks-item {
-    height: 76px;
-  }
-}
 
 .howitworks-item::before {
   content: counter(list-counter);
