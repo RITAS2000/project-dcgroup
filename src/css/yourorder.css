@@ -466,3 +466,8 @@
 .link-order {
   color: #fbfbfb;
 }
+
+.social-item {
+  display: flex;
+  gap: 12px;
+}
