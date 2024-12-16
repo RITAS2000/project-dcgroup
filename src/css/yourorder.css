@@ -303,13 +303,13 @@
 @media screen and (min-width: 768px) {
   .form-but {
     padding: 16px 191px;
-    width: 440px;
+    max-width: 440px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .form-but {
-    width: 428px;
+    max-width: 428px;
   }
 }
 

@@ -21,3 +21,6 @@ images.forEach(image => {
         textarea.value += (textarea.value ? '\n' : '') + image.alt;
     });
 });
+  function scrollToSection() {
+    document.getElementById('yourorder').scrollIntoView({ behavior: 'smooth' });
+  }
