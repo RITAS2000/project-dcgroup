@@ -1,0 +1,137 @@
+.hero {
+    position: relative;
+    padding-top: 100px;
+    width: 100%;
+    background-color: #576f35;
+}
+.wrapper{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+    .hero {
+        padding-top: 120px;
+    }
+    .wrapper {
+        gap: 52px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero {
+      padding-top: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .hero .container{
+        min-width: 504px;
+        padding-top: 232px;
+        padding-bottom: 52px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 36px;
+        width: 1280px;
+
+    }
+}
+
+.hero-heading {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    max-width: 335px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-heading {
+        font-size: 76px;
+        margin-bottom: 24px;
+        max-width: 704px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero-heading {
+        max-width: 502px;
+        margin-bottom: 128px;
+    }
+}
+
+
+.hero-text {
+    font-size: 14px;
+    line-height: 1.43;
+    max-width: 335px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-text {
+        font-size: 16px;
+        line-height: 1.25;
+        max-width: 603px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero-text {
+        max-width: 472px;
+    }
+}
+
+.background-img {
+    height: 372px;
+    background-image: url(/img/hero/image@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@media (min-resolution:192dpi),
+(min-resolution: 2dppx) {
+    .background-img {
+        background-image: url(/img/hero/image@2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .background-img {
+        height: 536px;
+        background-image: url(/img/hero/imagetab@1x.jpg);
+    }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution:192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .background-img {
+        background-image: url(../img/hero/imagetab@2x.jpg);
+
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .background-img {
+        width: 640px;
+        height: 796px;
+        background-image: url(/img/hero/Imagedesk@1x.jpg);
+        background-size: cover;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1280px) and (min-resolution:192dpi),
+screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+    .background-img {
+        background-image: url(/img/hero/Imagedesk@2x.jpg);
+    }
+}

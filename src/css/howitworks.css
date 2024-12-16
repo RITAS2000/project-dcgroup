@@ -13,6 +13,8 @@
 @media screen and (min-width: 1280px) {
   .howitworks {
     flex-direction: row;
+    justify-content: center;
+    background-color: #7a3145;
   }
 
   .box {
@@ -56,8 +58,7 @@
 
 @media screen and (min-width: 1280px) {
   .howitworks-block-image {
-    display: flex;
-    justify-content: flex-end;
+   
     padding: 100px;
 
   }
@@ -131,14 +132,15 @@
 
 .howitworks-block-order {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 80px 20px;
-  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   .howitworks-block-order {
 
-    padding: 100px 130px 100px;
+    padding: 100px 130px;
 
   }
 }
@@ -228,7 +230,6 @@
 .howitworks-item {
   border-radius: 15px;
   padding: 12px 27px 12px 24px;
-  height: 84px;
   background: #fbfbfb;
   font-weight: 500;
   font-size: 14px;
@@ -239,6 +240,7 @@
   gap: 24px;
 }
 
+
 @media screen and (min-width: 768px) {
   .howitworks-item {
     font-size: 16px;
@@ -246,11 +248,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .howitworks-item {
-    height: 76px;
-  }
-}
 
 .howitworks-item::before {
   content: counter(list-counter);
@@ -284,4 +281,10 @@
   }
 
 
+}
+@media  screen and (min-width: 1280px) {
+  .howitworks-item {
+    padding: 18px 15px 18px 24px;
+  }
+  
 }

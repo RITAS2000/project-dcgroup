@@ -2,7 +2,8 @@
   position: absolute;
   top: 20px;
   left: 0;
-  background-color: chocolate;
+  width: 100%;
+  z-index: 1;
 }
 
 .header-container {
@@ -12,7 +13,9 @@
 }
 
 .logo-container {
-  display: flex;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   margin-right: auto;
 }
 
@@ -113,15 +116,34 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-menu-btn {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .nav-menu {
-  display: block;
+  /* display: block; */
   fill: #fbfbfb;
 }
 
 @media only screen and (min-width: 1280px) {
   .nav-menu-btn {
     display: none;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  .container {
+    min-width: 1280px;
+    padding: 0 100px;
   }
 }
