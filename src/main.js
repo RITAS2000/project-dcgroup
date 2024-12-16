@@ -1,19 +1,27 @@
-const modalBtnOpen = document.querySelector('.js-open-modal'); // Кнопка для відкриття модалки
-const modalBtnClose = document.querySelector('.js-close-modal'); // Кнопка для закриття модалки
-const modalBackdrop = document.querySelector('.mobile-menu-backdrop'); // Фон модалки
-const modalMenu = document.querySelector('.mobile-menu'); // Саме меню
+// Отримуємо елементи
+const modalBtnOpen = document.querySelector('.js-open-modal');
+const modalBtnClose = document.querySelector('.js-close-modal');
+const modalBackdrop = document.querySelector('.mobile-menu-backdrop');
+const modal = document.querySelector('.mobile-menu');
 
-// Додаємо обробник подій для кнопки відкриття
-modalBtnOpen.addEventListener('click', openModal);
+// Додаємо слухачі подій для кнопок
+modalBtnOpen.addEventListener('click', () => {
+  modalBackdrop.classList.add('is-open');  // Відкриваємо фон
+  modal.classList.add('is-open');          // Відкриваємо меню
+});
 
-// Додаємо обробник подій для кнопки закриття
-modalBtnClose.addEventListener('click', closeModal);
+modalBtnClose.addEventListener('click', () => {
+  modalBackdrop.classList.remove('is-open'); // Закриваємо фон
+  modal.classList.remove('is-open');         // Закриваємо меню
+});
 
-// Функція для відкриття модалки
-function openModal() {
-  modalBackdrop.classList.add('is-open'); // Додаємо клас 'is-open' для фону
-  modalMenu.classList.add('is-open'); // Додаємо клас 'is-open' для меню
-}
+// Закриття модалки, якщо натискати на фон
+modalBackdrop.addEventListener('click', (e) => {
+  if (e.target === modalBackdrop) {
+    modalBackdrop.classList.remove('is-open'); // Закриваємо фон
+    modal.classList.remove('is-open');         // Закриваємо меню
+  }
+});
 
 // Функція для закриття модалки
 function closeModal() {
