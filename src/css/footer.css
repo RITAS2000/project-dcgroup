@@ -109,9 +109,6 @@
   line-height: 1.43;
   color: #d4bfc4;
 }
-a:focus {
-  color: #576F35;
-}
 
 /* Styles for Tablet devices */
 
@@ -183,13 +180,9 @@ a:focus {
     max-width: 1280px;
     padding: 0 100px;
   }
-  .footer {
-    padding: 52px 0;
-  }
   .box {
     flex-direction: row;
     gap: 250px;
-    margin-bottom: 124px;
   }
   .logo-box {
     gap: 24px;
@@ -240,7 +233,6 @@ a:focus {
     line-height: 1.25;
     color: #d4bfc4;
   }
-  a:hover {
-    color: #576F35;
+
   }
 }
