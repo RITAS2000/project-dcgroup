@@ -73,7 +73,8 @@
   background-size: cover;
 }
 
-@media (min-resolution: 192dpi) {
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .main-image {
     background:
       linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
@@ -94,9 +95,10 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+(min-resolution: 192dpi) and (min-width: 768px) {
   .main-image {
-    width: 640px;
+
     background:
       linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
 
@@ -117,11 +119,11 @@
   }
 }
 
-@media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+(min-resolution: 192dpi) and (min-width: 1280px) {
 
   .main-image {
-    width: 440px;
-    height: 560px;
+
     background:
       linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
 
@@ -129,6 +131,7 @@
     background-size: cover;
   }
 }
+
 
 .howitworks-block-order {
   display: flex;
