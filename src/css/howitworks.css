@@ -58,8 +58,7 @@
 
 @media screen and (min-width: 1280px) {
   .howitworks-block-image {
-    display: flex;
-    justify-content: flex-end;
+   
     padding: 100px;
 
   }
@@ -132,9 +131,7 @@
 }
 
 .howitworks-block-order {
-  display: flex;
   padding: 80px 20px;
-  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
