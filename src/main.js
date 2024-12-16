@@ -23,4 +23,5 @@ images.forEach(image => {
 });
   function scrollToSection() {
     document.getElementById('yourorder').scrollIntoView({ behavior: 'smooth' });
-};
+}
+    document.querySelector('.nav-btn').addEventListener('click', scrollToSection);
