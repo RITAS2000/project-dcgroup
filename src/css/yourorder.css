@@ -239,7 +239,7 @@
 @media screen and (min-width: 768px) {
   .comment-input {
     padding: 16px 15px;
-    width: 440px;
+    max-width: 440px;
     height: 96px;
     margin-bottom: 24px;
   }
@@ -247,7 +247,7 @@
 
 @media screen and (min-width: 1280px) {
   .comment-input {
-    width: 428px;
+    max-width: 428px;
   }
 }
 
