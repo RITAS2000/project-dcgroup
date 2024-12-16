@@ -103,47 +103,47 @@
 }
 
 .background-img {
-    width: 375px;
+    /* max-width: 375px; */
     height: 372px;
-    background-image: linear-gradient(to right, #141414 20%, transparent 20%), url(../img/hero/image@1x.jpg);
+    background-image: url(../img/hero/image@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 
 @media (min-resolution:192dpi),
 (min-resolution: 2dppx) {
     .background-img {
-        background-image: linear-gradient(to right, #141414 20%, transparent 20%), url(../img/hero/image@2x.jpg);
+        background-image: url(../img/hero/image@2x.jpg);
     }
 }
 
 @media only screen and (min-width: 768px) {
     .background-img {
-        width: 768px;
         height: 536px;
-        background-image: linear-gradient(to right, #141414 20%, transparent 20%), url(../img/hero/imagetab@1x.jpg);
+        background-image: url(../img/hero/imagetab@1x.jpg);
     }
 }
 
 @media only screen and (min-width: 768px) and (min-resolution:192dpi),
 screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .background-img {
-        background-image: linear-gradient(to right, #141414 20%, transparent 20%), url(../img/hero/imagetab@2x.jpg);
+        background-image: url(../img/hero/imagetab@2x.jpg);
     }
 }
 
 @media only screen and (min-width: 1280px) {
     .background-img {
-        width: 640px;
+        width: 50%;
         height: 796px;
-        background-image: linear-gradient(to right, #141414 20%, transparent 20%), url(../img/hero/Imagedesk@1x.jpg);
+        background-image: url(../img/hero/Imagedesk@1x.jpg);
+        background-size: cover;
     }
 }
 
 @media only screen and (min-width: 1280px) and (min-resolution:192dpi),
 screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     .background-img {
-        background-image: linear-gradient(to right, #141414 20%, transparent 20%), url(../img/hero/Imagedesk@2x.jpg);
+        background-image: url(../img/hero/Imagedesk@2x.jpg);
     }
 }
