@@ -23,12 +23,6 @@ modalBackdrop.addEventListener('click', (e) => {
   }
 });
 
-// Функція для закриття модалки
-function closeModal() {
-  modalBackdrop.classList.remove('is-open'); // Видаляємо клас 'is-open' для фону
-  modalMenu.classList.remove('is-open'); // Видаляємо клас 'is-open' для меню
-}
-
 
 const images = document.querySelectorAll('.clickable-image');
 
