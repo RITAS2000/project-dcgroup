@@ -153,30 +153,19 @@
     }
 
 }
+
 .background-img {
-    position: relative;
     height: 372px;
-    background-image: url(/img/hero/image@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     width: 100%;
-    /* тепер відносно контейнера */
-}
-.background-img::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* відповідатиме розмірам .background-img */
-    height: 100%;
     background: linear-gradient(to right,
             rgba(20, 20, 20, 0.2) 20%,
-            rgba(20, 20, 20, 0.2) 20%);
-    pointer-events: none;
+            rgba(20, 20, 20, 0.2) 20%),
+        url(/img/hero/image@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Або "cover", залежно від дизайну */
 }
-    /* Забороняє взаємодію з псевдоелементом */
 
 @media (min-resolution:192dpi),
 (min-resolution: 2dppx) {
