@@ -9,6 +9,7 @@
     z-index: 20;
     opacity: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
   }
 }
 
@@ -67,7 +68,6 @@
 
   background-color: transparent;
   border: none;
-  outline: none;
 }
 
 .mobile-menu-close-icon {
