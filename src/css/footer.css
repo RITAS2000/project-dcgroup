@@ -54,6 +54,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  gap: 8px;
 }
 .svg-logo {
   fill: #fbfbfb;
@@ -106,14 +107,6 @@
   color: #d4bfc4;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.first-option-link::after {
-  content: '/';
-  font-size: 14px;
-  line-height: 1.43;
-  color: #d4bfc4;
-  margin-left: 8px;
-  margin-right: 8px;
-}
 .mini-logo {
   font-size: 14px;
   line-height: 1.43;
@@ -126,10 +119,15 @@
   transform: scale(1.1);
 }
 .link-address:focus {
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .option-link:focus {
   transform: scale(1.1);
+}
+.span-slesh {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
 }
 
 /* Styles for Tablet devices */
@@ -209,12 +207,11 @@ transform: scale(1.1);
 @media only screen and (min-width: 1280px) {
   .footer {
     padding: 52px 0;
-      gap: 124px;
+    gap: 124px;
   }
   .box {
     flex-direction: row;
     gap: 250px;
-
   }
   .logo-box {
     gap: 24px;
@@ -230,6 +227,11 @@ transform: scale(1.1);
     gap: 24px;
     width: 216px;
   }
+
+  .policy-box {
+    gap: 12px;
+  }
+
   .last-box {
     flex-direction: row;
     justify-content: space-between;
@@ -264,15 +266,6 @@ transform: scale(1.1);
     line-height: 1.25;
     color: #d4bfc4;
   }
-  .first-option-link::after {
-    content: '/';
-    font-size: 14px;
-    line-height: 1.43;
-    color: #d4bfc4;
-    margin-left: 12px;
-    margin-right: 12px;
-  }
-   
   .link-tell:focus {
     color: #576f35;
   }
