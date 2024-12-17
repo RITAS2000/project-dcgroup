@@ -4,6 +4,10 @@
   padding-bottom: 80px;
 }
 
+.reviews-h2-p {
+  margin-bottom: 40px;
+}
+
 .h2-green {
   color: #576f35;
 }
@@ -23,7 +27,6 @@
   font-size: 14px;
   line-height: 1.42857;
   color: #141414;
-  margin-bottom: 40px;
 }
 
 .reviews-ul {
@@ -87,6 +90,7 @@
     display: none;
   }
   .reviews-h2-p {
+    margin-bottom: 52px;
     max-width: 80%;
   }
   .reviews-h2 {
@@ -97,7 +101,6 @@
   .reviews-p {
     font-size: 16px;
     line-height: 1.25;
-    margin-bottom: 52px;
   }
   .reviews-ul {
     display: flex;

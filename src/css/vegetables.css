@@ -12,7 +12,26 @@
     color: #fbfbfb;
     margin-bottom: 20px;
 }
+/* Медіа запит для зменшення шрифта при ширині менше 350px */
+@media screen and (min-width: 346px) and (max-width: 360px) {
+    .title-vegetables {
+        font-size: 44px;
+    }
+}
 
+/* Медіа запит для зменшення шрифта при ширині менше 335px */
+@media screen and (min-width: 331px) and (max-width: 345px) {
+    .title-vegetables {
+        font-size: 36px;
+    }
+}
+
+/* Медіа запит для зменшення шрифта при ширині менше 320px */
+@media screen and (min-width: 0px) and (max-width: 330px) {
+    .title-vegetables {
+        font-size: 30px;
+    }
+}
 .title-part {
     color: #d4bfc4;
 }
@@ -33,21 +52,19 @@
 }
 
 .vegetables-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 40px;
     width: 335px;
     background-color: #fbfbfb;
     padding: 32px 24px;
 }
 
-.vegetables-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .vegetables-content {
     align-self: flex-start;
+    margin-bottom: 12px;
 }
  
 .vegetables-card-title {
@@ -65,7 +82,6 @@
     font-size: 14px;
     line-height: 1.43;
     color: #141414;
-    margin-bottom: 12px;
 }
 
 .vegetables-img {

@@ -1,0 +1,74 @@
+
+
+.line-break {
+  display: none;
+}
+
+.ertis-text {
+  font-weight: 600;
+  font-size: 48px;
+  color: black;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+
+.ertis {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #fbfbfb;
+}
+
+.discount {
+  border-radius: 12px;
+  background-color: #576f35;
+  color: white;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .ertis-text {
+    font-size: 64px;
+  }
+  .ertis {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ertis-text {
+    font-size: 76px;
+    display: inline-block;
+  }
+  .discount {
+    display: inline-block;
+    height: 84px;
+    width: 808px;
+    text-align: center;
+  }
+  .line-break {
+    display: inline;
+  }
+}
+/* Медіа запит для зменшення шрифта при ширині менше 350px */
+@media screen and (min-width: 346px) and (max-width: 360px) {
+  .ertis-text{
+    font-size: 44px;
+  }
+}
+
+/* Медіа запит для зменшення шрифта при ширині менше 335px */
+@media screen and (min-width: 331px) and (max-width: 345px) {
+  .ertis-text {
+    font-size: 36px;
+  }
+}
+
+/* Медіа запит для зменшення шрифта при ширині менше 320px */
+@media screen and (min-width: 0px) and (max-width: 330px) {
+  .ertis-text {
+    font-size: 30px;
+  }
+}

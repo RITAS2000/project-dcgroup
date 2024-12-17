@@ -1,7 +1,4 @@
-.box {
-  width: 100%;
-  flex: 1;
-}
+
 
 .howitworks {
   display: flex;
@@ -14,12 +11,10 @@
   .howitworks {
     flex-direction: row;
     justify-content: center;
-    background-color: #7a3145;
+    background: linear-gradient(to right, #7a3145 50%, #576F35 50%);
+
   }
 
-  .box {
-    width: 50%;
-  }
 
   .box-red {
     background-size: cover;
@@ -33,11 +28,18 @@
 }
 
 .tex {
-  width: 335px;
+  max-width: 335px;
 }
 
 .howitworks-block-image {
   padding: 40px 0px;
+}
+@media screen and (min-width) and (max-width: 360px) {
+  .main-image{
+    width: auto;
+    height: auto;
+  }
+  
 }
 
 .box-red {
@@ -58,8 +60,7 @@
 
 @media screen and (min-width: 1280px) {
   .howitworks-block-image {
-    display: flex;
-    justify-content: flex-end;
+
     padding: 100px;
 
   }
@@ -74,7 +75,8 @@
   background-size: cover;
 }
 
-@media (min-resolution: 192dpi) {
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .main-image {
     background:
       linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
@@ -95,9 +97,10 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+(min-resolution: 192dpi) and (min-width: 768px) {
   .main-image {
-    width: 640px;
+
     background:
       linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
 
@@ -118,11 +121,11 @@
   }
 }
 
-@media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+(min-resolution: 192dpi) and (min-width: 1280px) {
 
   .main-image {
-    width: 440px;
-    height: 560px;
+
     background:
       linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
 
@@ -131,16 +134,18 @@
   }
 }
 
+
 .howitworks-block-order {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 80px 20px;
-  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   .howitworks-block-order {
 
-    padding: 100px 130px;
+    padding: 100px 164px;
 
   }
 }
@@ -157,7 +162,7 @@
 
 @media screen and (min-width: 768px) {
   .tex {
-    width: 440px;
+    max-width: 440px;
     flex-direction: column;
   }
 }
@@ -205,6 +210,7 @@
   .howitworks-text {
     font-size: 16px;
     line-height: 125%;
+    margin-bottom: 52px;
   }
 }
 
@@ -230,7 +236,6 @@
 .howitworks-item {
   border-radius: 15px;
   padding: 12px 27px 12px 24px;
-  height: 84px;
   background: #fbfbfb;
   font-weight: 500;
   font-size: 14px;
@@ -241,18 +246,18 @@
   gap: 24px;
 }
 
+
 @media screen and (min-width: 768px) {
   .howitworks-item {
     font-size: 16px;
     line-height: 125%;
+    padding: 12px 15px 12px 24px;
+
+    
+
   }
 }
 
-@media screen and (min-width: 768px) {
-  .howitworks-item {
-    height: 76px;
-  }
-}
 
 .howitworks-item::before {
   content: counter(list-counter);
@@ -287,9 +292,10 @@
 
 
 }
-@media  screen and (min-width: 1280px) {
+
+@media screen and (min-width: 1280px) {
   .howitworks-item {
-    padding: 18px 15px 18px 24px;
+    padding: 12px 15px 12px 24px;
   }
-  
+
 }
