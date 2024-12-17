@@ -79,6 +79,7 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
+  outline: none;
 }
 .ul-links {
   display: flex;
@@ -93,6 +94,7 @@
   font-size: 14px;
   line-height: 1.43;
   color: #fbfbfb;
+  outline: none;
 }
 .address {
   font-weight: 700;
@@ -108,9 +110,6 @@
   font-size: 14px;
   line-height: 1.43;
   color: #d4bfc4;
-}
-a:focus {
-  color: #3cbc81;
 }
 
 /* Styles for Tablet devices */
@@ -238,12 +237,7 @@ a:focus {
     line-height: 1.25;
     color: #d4bfc4;
   }
-  a:focus {
-    color: #3cbc81;
-  }
-  a:hover {
-    color: #3cbc81;
-  }
+  
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {

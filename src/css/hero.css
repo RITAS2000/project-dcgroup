@@ -25,13 +25,11 @@
       justify-content: center;
     }
     .hero .container{
-        min-width: 540px;
-        width: 504px;
+        min-width: 504px;
         padding-top: 232px;
         padding-bottom: 52px;
         padding-left: 0;
         padding-right: 0;
-        margin-left:auto;
         margin-right: 0;
     }
     .wrapper {
@@ -52,6 +50,26 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     max-width: 335px;
+}
+/* Медіа запит для зменшення шрифта при ширині менше 350px */
+@media screen and (max-width: 360px) {
+    .hero-heading {
+        font-size: 48px;
+    }
+}
+
+/* Медіа запит для зменшення шрифта при ширині менше 335px */
+@media screen and (max-width: 345px) {
+    .hero-heading {
+        font-size: 44px;
+    }
+}
+
+/* Медіа запит для зменшення шрифта при ширині менше 320px */
+@media screen and (min-width: 0) and (max-width: 330px) {
+    .hero-heading {
+        font-size: 42px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -89,10 +107,31 @@
         max-width: 472px;
     }
 }
+@media only screen and (max-width: 360px) {
+    .hero-text {
+        font-size: 12px;
+        max-width: 320px;
+    }
+}
 
+@media only screen and (max-width: 340px) {
+    .hero-text {
+        font-size: 10px;
+        max-width: 300px;
+    }
+}
+@media only screen and (min-width:0) and (max-width: 320px) {
+    .hero-text {
+        font-size: 8px;
+        max-width: 260px;
+    }
+}
 .background-img {
     height: 372px;
-    background-image: url(/img/hero/image@1x.jpg);
+    background-image: linear-gradient(to right,
+            rgba(20, 20, 20, 0.2) 20%,
+    
+            rgba(20, 20, 20, 0.2) 20%), url(/img/hero/image@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -101,31 +140,42 @@
 @media (min-resolution:192dpi),
 (min-resolution: 2dppx) {
     .background-img {
-        background-image: url(/img/hero/image@2x.jpg);
+        background-image: linear-gradient(to right,
+                rgba(20, 20, 20, 0.2) 20%,
+        
+                rgba(20, 20, 20, 0.2) 20%), url(/img/hero/image@2x.jpg);
     }
 }
 
 @media only screen and (min-width: 768px) {
     .background-img {
         height: 536px;
-        background-image: url(/img/hero/imagetab@1x.jpg);
+        background-image: linear-gradient(to right,
+                rgba(20, 20, 20, 0.2) 20%,
+        
+                rgba(20, 20, 20, 0.2) 20%), url(/img/hero/imagetab@1x.jpg);
     }
 }
 
 @media only screen and (min-width: 768px) and (min-resolution:192dpi),
 screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .background-img {
-        background-image: url(../img/hero/imagetab@2x.jpg);
+        background-image: linear-gradient(to right,
+                rgba(20, 20, 20, 0.2) 20%,
+        
+                rgba(20, 20, 20, 0.2) 20%), url(/img/hero/imagetab@2x.jpg);
 
     }
 }
 
 @media only screen and (min-width: 1280px) {
     .background-img {
-        margin-right: auto;
         width: 640px;
         height: 796px;
-        background-image: url(/img/hero/Imagedesk@1x.jpg);
+        background-image: linear-gradient(to right,
+                rgba(20, 20, 20, 0.2) 20%,
+        
+                rgba(20, 20, 20, 0.2) 20%), url(/img/hero/Imagedesk@1x.jpg);
         background-size: cover;
     }
     
@@ -135,6 +185,9 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
 @media only screen and (min-width: 1280px) and (min-resolution:192dpi),
 screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     .background-img {
-        background-image: url(/img/hero/Imagedesk@2x.jpg);
+        background-image: linear-gradient(to right,
+                rgba(20, 20, 20, 0.2) 20%,
+        
+                rgba(20, 20, 20, 0.2) 20%), url(/img/hero/Imagedesk@2x.jpg);
     }
 }

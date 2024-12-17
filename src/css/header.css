@@ -1,8 +1,9 @@
 .header {
   position: absolute;
   top: 20px;
-  left: 50%;
-  z-index: 1;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .header-container {
@@ -11,11 +12,24 @@
   justify-content: space-between;
 }
 
-.logo-container {
+.header-logo-link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   margin-right: auto;
+  padding: 8px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-logo-link {
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .header-logo-link {
+    padding: 16px 0;
+  }
 }
 
 .header-logo {
@@ -47,41 +61,41 @@
   gap: 8px;
 }
 
-.nav-list-item {
+.nav-list-link {
+  line-height: 1.25;
+  text-align: center;
+  color: #fbfbfb;
+  text-transform: capitalize;
+
   border: 1px solid #fbfbfb;
   border-radius: 12px;
   padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list-item:hover,
+/* .nav-list-item:hover,
 .nav-list-item:focus {
   background: #d4bfc4;
-}
+} */
 
-.nav-list-item:active {
-  background: #fbfbfb;
-}
 
-.nav-list-item:hover .nav-list-link,
-.nav-list-item:focus .nav-list-link {
+.nav-list-link:hover,
+.nav-list-link:focus {
+  background-color: #d4bfc4;
   color: #7a3145;
 }
 
-.nav-list-item:active .nav-list-link {
+.nav-list-link:active {
+  background-color: #fbfbfb;
   color: #7a3145;
-}
-
-.nav-list-link {
-  line-height: 1.25;
-  text-align: center;
-  color: #fbfbfb;
-  text-transform: capitalize;
 }
 
 .nav-btn {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,20 +108,22 @@
   background: #7a3145;
 
   font-size: 18px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-btn:hover,
 .nav-btn:focus {
-  background: #d4bfc4;
+  background-color: #d4bfc4;
   color: #7a3145;
 }
 
 .nav-btn:active {
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   color: #7a3145;
 }
 
@@ -120,6 +136,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  z-index: 25;
 }
 
 @media only screen and (min-width: 768px) {
@@ -130,7 +147,6 @@
 }
 
 .nav-menu {
-  /* display: block; */
   fill: #fbfbfb;
 }
 
