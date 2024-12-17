@@ -1,14 +1,12 @@
-const modalBtnOpen = document.querySelector('.js-open-modal'); // Кнопка відкриття
-const modalBtnClose = document.querySelector('.js-close-modal'); // Кнопка закриття
-const modalBackdrop = document.querySelector('.mobile-menu-backdrop'); // Модальне вікно
+const modalBtnOpen = document.querySelector('.js-open-modal');
+const modalBtnClose = document.querySelector('.js-close-modal');
+const modal = document.querySelector('.js-modal');
 
-
-// Додаємо обробники подій
 modalBtnOpen.addEventListener('click', toggleModal);
 modalBtnClose.addEventListener('click', toggleModal);
 
 function toggleModal() {
-  modalBackdrop.classList.toggle('is-open');
+  modal.classList.toggle('is-open');
 }
 
 const images = document.querySelectorAll('.clickable-image');
