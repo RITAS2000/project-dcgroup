@@ -121,17 +121,8 @@
   line-height: 1.43;
   color: #d4bfc4;
 }
-
-
-.link {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #fbfbfb;
-  
+a:focus {
+  color: #576F35;
 }
 
 /* Styles for Tablet devices */
@@ -204,13 +195,9 @@
     max-width: 1280px;
     padding: 0 100px;
   }
-  .footer {
-    padding: 52px 0;
-  }
   .box {
     flex-direction: row;
     gap: 250px;
-    margin-bottom: 124px;
   }
   .logo-box {
     gap: 24px;
@@ -261,18 +248,7 @@
     line-height: 1.25;
     color: #d4bfc4;
   }
- 
-.link:hover {
-  /*color: #576F35;  это было*/
-  font-size: 36px;
-  /* Увеличенный размер шрифта */
-  font-weight: 600;
-  /* Жирный шрифт */
-  outline: none;
-  /* Убираем контур фокуса */
-  font-size: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-  .link:focus {
-  color: #576F35;  
-}
+  a:hover {
+    color: #576F35;
+  }
 }
