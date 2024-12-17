@@ -473,6 +473,7 @@
 .link-order:hover,
 .link-order:focus {
   font-size: 24px;
+  color: #576f35;
 }
 
 .social-item {
