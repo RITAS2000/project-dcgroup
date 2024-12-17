@@ -128,7 +128,10 @@
 }
 .background-img {
     height: 372px;
-    background-image: url(/img/hero/image@1x.jpg);
+    background-image: linear-gradient(to right,
+            rgba(20, 20, 20, 0.2) 20%,
+    
+            rgba(20, 20, 20, 0.2) 20%), url(/img/hero/image@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -137,21 +140,30 @@
 @media (min-resolution:192dpi),
 (min-resolution: 2dppx) {
     .background-img {
-        background-image: url(/img/hero/image@2x.jpg);
+        background-image: linear-gradient(to right,
+                rgba(20, 20, 20, 0.2) 20%,
+        
+                rgba(20, 20, 20, 0.2) 20%), url(/img/hero/image@2x.jpg);
     }
 }
 
 @media only screen and (min-width: 768px) {
     .background-img {
         height: 536px;
-        background-image: url(/img/hero/imagetab@1x.jpg);
+        background-image: linear-gradient(to right,
+                rgba(20, 20, 20, 0.2) 20%,
+        
+                rgba(20, 20, 20, 0.2) 20%), url(/img/hero/imagetab@1x.jpg);
     }
 }
 
 @media only screen and (min-width: 768px) and (min-resolution:192dpi),
 screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .background-img {
-        background-image: url(../img/hero/imagetab@2x.jpg);
+        background-image: linear-gradient(to right,
+                rgba(20, 20, 20, 0.2) 20%,
+        
+                rgba(20, 20, 20, 0.2) 20%), url(/img/hero/imagetab@2x.jpg);
 
     }
 }
@@ -160,7 +172,10 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .background-img {
         width: 640px;
         height: 796px;
-        background-image: url(/img/hero/Imagedesk@1x.jpg);
+        background-image: linear-gradient(to right,
+                rgba(20, 20, 20, 0.2) 20%,
+        
+                rgba(20, 20, 20, 0.2) 20%), url(/img/hero/Imagedesk@1x.jpg);
         background-size: cover;
     }
     
@@ -170,6 +185,9 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
 @media only screen and (min-width: 1280px) and (min-resolution:192dpi),
 screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     .background-img {
-        background-image: url(/img/hero/Imagedesk@2x.jpg);
+        background-image: linear-gradient(to right,
+                rgba(20, 20, 20, 0.2) 20%,
+        
+                rgba(20, 20, 20, 0.2) 20%), url(/img/hero/Imagedesk@2x.jpg);
     }
 }

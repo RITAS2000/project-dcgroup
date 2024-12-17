@@ -12,29 +12,30 @@
       </p>
     </div>
     <div class="order-form">
-      <div class="form">
-        <h3 class="form-title">
+      <form class="form">
+        <p class="form-title">
           Ordering <span class="form-span-one">from us</span> is quick and easy!
           Fill out <span class="form-span-two">the form</span> below and we will
           contact you !
-        </h3>
-        <input class="name-input" type="text" name="user-name" placeholder="Full Name" pattern="([\-a-zA-Z']{2,20})"
-          required />
-        <input class="email-input" type="email" name="user-email" placeholder="Email"
+        </p>
+        <input class="name-input" type="text" aria-label="Full Name" name="user-name" placeholder="Full Name"
+          pattern="([\-a-zA-Z']{2,20})" required />
+        <input class="email-input" type="email" aria-label="Email" name="user-email" placeholder="Email"
           pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
-        <textarea id="text-area" class="comment-input" placeholder="Comment" name="user-comment" required></textarea>
+        <textarea id="text-area" class="comment-input" aria-label="Comment" placeholder="Comment" name="user-comment"
+          required></textarea>
         <button class="form-but" type="submit">Send</button>
-      </div>
+      </form>
       <div class="social-order">
         <picture class="image-wrapper">
-          <source srcset="img/yourorder/desktop@2x.png"
-            media="(min-width: 1280px) and (min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 192dpi)">
-          <source srcset="img/yourorder/desktop@1x.png" media="(min-width: 1280px)">
-          <source srcset="img/yourorder/tablet@2x.png"
-            media="(min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)">
-          <source srcset="img/yourorder/tablet@1x.png" media="(min-width: 768px)">
-          <source srcset="img/yourorder/mobile@2x.png" media="(min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
-          <img class="image-order" src="img/yourorder/mobile@1x.png" alt="Fresh Harvest">
+          <source media="(min-width: 1280px)"
+            srcset="/img/yourorder/desktop@1x.png 1x, /img/yourorder/desktop@2x.png 2x" />
+          <source media="(min-width: 768px)"
+            srcset="/img/yourorder/tablet@1x.png 1x, /img/yourorder/tablet@2x.png 2x" />
+          <source media="(max-width: 767px)"
+            srcset="/img/yourorder/mobile@1x.png 1x, /img/yourorder/mobile@2x.png 2x" />
+          <img class="image-order" src="/img/yourorder/mobile@1x.png" alt="The girl is making juice" width="428"
+            height="352" />
         </picture>
 
         <p class="social-text">Follow us on our social networks:</p>
@@ -42,11 +43,11 @@
           <ul class="social-media">
             <li class="social-item"><a class="link-order" target="_blank"
                 href="https://www.instagram.com/goitclub/">Instagram</a>
-              <p class="slesh">/</p>
+              <span class="slesh">/</span>
             </li>
             <li class="social-item"><a class="link-order" target="_blank"
                 href="https://www.facebook.com/goITclub/">Facebook</a>
-              <p class="slesh">/</p>
+              <span class="slesh">/</span>
             </li>
             <li class="social-item"><a class="link-order" target="_blank"
                 href="https://www.youtube.com/c/GoIT">YouTube</a></li>

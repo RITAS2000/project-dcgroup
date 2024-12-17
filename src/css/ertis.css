@@ -4,7 +4,7 @@
   display: none;
 }
 
-.advertis-text {
+.ertis-text {
   font-weight: 600;
   font-size: 48px;
   color: black;
@@ -14,7 +14,7 @@
 }
 
 
-.advertis {
+.ertis {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #fbfbfb;
@@ -28,17 +28,17 @@
 }
 
 @media screen and (min-width: 768px) {
-  .advertis-text {
+  .ertis-text {
     font-size: 64px;
   }
-  .advertis {
+  .ertis {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .advertis-text {
+  .ertis-text {
     font-size: 76px;
     display: inline-block;
   }
@@ -54,21 +54,21 @@
 }
 /* Медіа запит для зменшення шрифта при ширині менше 350px */
 @media screen and (min-width: 346px) and (max-width: 360px) {
-  .advertis-text{
+  .ertis-text{
     font-size: 44px;
   }
 }
 
 /* Медіа запит для зменшення шрифта при ширині менше 335px */
 @media screen and (min-width: 331px) and (max-width: 345px) {
-  .advertis-text {
+  .ertis-text {
     font-size: 36px;
   }
 }
 
 /* Медіа запит для зменшення шрифта при ширині менше 320px */
 @media screen and (min-width: 0px) and (max-width: 330px) {
-  .advertis-text {
+  .ertis-text {
     font-size: 30px;
   }
 }
