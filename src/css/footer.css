@@ -74,7 +74,9 @@
   color: #fbfbfb;
   outline: none;
   white-space: nowrap;
-  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.li-link {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ul-links {
   display: flex;
@@ -90,7 +92,7 @@
   line-height: 1.43;
   color: #fbfbfb;
   outline: none;
-  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-address {
   font-family: 'Inter Tight', sans-serif;
@@ -98,15 +100,14 @@
   font-size: 14px;
   line-height: 1.43;
   color: #fbfbfb;
-  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .option-link {
   font-size: 14px;
   line-height: 1.43;
   color: #d4bfc4;
-  transition: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .first-option-link::after {
   content: '/';
   font-size: 14px;
@@ -115,23 +116,22 @@
   margin-left: 8px;
   margin-right: 8px;
 }
-
 .mini-logo {
   font-size: 14px;
   line-height: 1.43;
   color: #d4bfc4;
 }
-.link:focus {
-  font-size: 36px;
+.li-link:hover {
+  transform: scale(1.1);
 }
 .link-tell:focus {
-  font-size: 18px;
+  transform: scale(1.1);
 }
 .link-address:focus {
-  font-size: 18px;
+transform: scale(1.1);
 }
 .option-link:focus {
-  font-size: 18px;
+  transform: scale(1.1);
 }
 
 /* Styles for Tablet devices */
@@ -194,15 +194,15 @@
     white-space: nowrap;
   }
   .link-tell:focus {
-    font-size: 20px;
+    transform: scale(1.1);
   }
 
   .link-address:focus {
-    font-size: 20px;
+    transform: scale(1.1);
   }
 
   .option-link:focus {
-    font-size: 20px;
+    transform: scale(1.1);
   }
 }
 
@@ -211,11 +211,12 @@
 @media only screen and (min-width: 1280px) {
   .footer {
     padding: 52px 0;
-    gap: 124px;
+      gap: 124px;
   }
   .box {
     flex-direction: row;
     gap: 250px;
+
   }
   .logo-box {
     gap: 24px;
@@ -233,7 +234,6 @@
   }
   .last-box {
     flex-direction: row;
-    /*gap: 686px;*/
     justify-content: space-between;
   }
   .svg-logo {
@@ -274,9 +274,7 @@
     margin-left: 12px;
     margin-right: 12px;
   }
-  .link:hover {
-    font-size: 38px;
-  }
+   
   .link-tell:focus {
     color: #576f35;
   }
@@ -287,12 +285,12 @@
     color: #576f35;
   }
   .link-tell:hover {
-    font-size: 18px;
+    transform: scale(1.1);
   }
   .link-address:hover {
-    font-size: 18px;
+    transform: scale(1.1);
   }
   .option-link:hover {
-    font-size: 20px;
+    transform: scale(1.1);
   }
 }
