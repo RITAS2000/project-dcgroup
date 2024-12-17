@@ -1,6 +1,6 @@
-const modalBtnOpen = document.querySelector('.js-open-modal');
-const modalBtnClose = document.querySelector('.js-close-modal');
-const modal = document.querySelector('.js-modal');
+var modalBtnOpen = document.querySelector('.js-open-modal');
+var modalBtnClose = document.querySelector('.js-close-modal');
+var modal = document.querySelector('.js-modal');
 
 modalBtnOpen.addEventListener('click', toggleModal);
 modalBtnClose.addEventListener('click', toggleModal);
