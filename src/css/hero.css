@@ -135,6 +135,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    width: 375px;
 }
 
 @media (min-resolution:192dpi),
@@ -149,6 +150,7 @@
 
 @media only screen and (min-width: 768px) {
     .background-img {
+        width: 768px;
         height: 536px;
         background-image: linear-gradient(to right,
                 rgba(20, 20, 20, 0.2) 20%,
