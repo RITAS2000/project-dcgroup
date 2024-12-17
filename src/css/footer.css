@@ -186,10 +186,12 @@
   .option-link {
     font-size: 16px;
     line-height: 1.25;
+    white-space: nowrap;
   }
   .mini-logo {
     font-size: 16px;
     line-height: 1.25;
+    white-space: nowrap;
   }
   .link-tell:focus {
     font-size: 20px;
@@ -231,7 +233,8 @@
   }
   .last-box {
     flex-direction: row;
-    gap: 686px;
+    /*gap: 686px;*/
+    justify-content: space-between;
   }
   .svg-logo {
     width: 216px;
@@ -284,10 +287,10 @@
     color: #576f35;
   }
   .link-tell:hover {
-    font-size: 20px;
+    font-size: 18px;
   }
   .link-address:hover {
-    font-size: 20px;
+    font-size: 18px;
   }
   .option-link:hover {
     font-size: 20px;
