@@ -6,15 +6,16 @@
     right: 0;
     width: 100%;
     height: 100%;
-    z-index: 20;
+    z-index: 1;
     opacity: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none;
+    
   }
 }
 
 .mobile-menu-backdrop.is-open {
   opacity: 1;
+  z-index: 100;
 }
 
 .mobile-menu {
@@ -24,7 +25,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  z-index: 30;
+  z-index: 100;
   padding-top: 296px;
   padding-bottom: 52px;
   display: flex;
