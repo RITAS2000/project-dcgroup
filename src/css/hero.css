@@ -127,17 +127,56 @@
         max-width: 260px;
     }
 }
-.background-img {
-    height: 372px;
-    background-image: linear-gradient(to right,
-            rgba(20, 20, 20, 0.2) 20%,
+.r{
+    position: relative;
+        /* Створює контекст позиціонування */
+        width: 100%;
+        /* Або конкретну ширину */
+        max-width: 375px;
+        /* Адаптуйте під ваш дизайн */
+        /* Центрування */
+        height: auto;
+        /* Автоматична висота за вмістом */
+        overflow: hidden;
+        /* Якщо є потреба приховати зайве */
+    }
+
+@media screen and (min-width: 768px){
+    .r {
+        max-width: 768px;
+    }
     
-            rgba(20, 20, 20, 0.2) 20%), url(/img/hero/image@1x.jpg);
+}
+@media screen and (min-width: 1280px) {
+    .r {
+        max-width: 640px;
+    }
+
+}
+.background-img {
+    position: relative;
+    height: 372px;
+    background-image: url(/img/hero/image@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 375px;
+    width: 100%;
+    /* тепер відносно контейнера */
 }
+.background-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* відповідатиме розмірам .background-img */
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(20, 20, 20, 0.2) 20%,
+            rgba(20, 20, 20, 0.2) 20%);
+    pointer-events: none;
+}
+    /* Забороняє взаємодію з псевдоелементом */
 
 @media (min-resolution:192dpi),
 (min-resolution: 2dppx) {
