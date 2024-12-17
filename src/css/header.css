@@ -87,7 +87,6 @@
 .nav-list-link:focus {
   background-color: #d4bfc4;
   color: #7a3145;
-  border: none;
 }
 
 .nav-list-link:active {
