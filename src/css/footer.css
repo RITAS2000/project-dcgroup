@@ -74,10 +74,11 @@
   text-transform: uppercase;
   color: #fbfbfb;
   white-space: nowrap;
-}
-.li-link {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} 
+}
+/* .li-link {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}  */
 .ul-links {
   display: flex;
   align-items: flex-start;
@@ -112,9 +113,12 @@
   line-height: 1.43;
   color: #d4bfc4;
 }
- .li-link:hover {
+.link:hover{
   transform: scale(1.1);
-} 
+}
+ /* .li-link:hover {
+  transform: scale(1.1);
+}  */
 .link-tell:focus {
   transform: scale(1.1);
 }
