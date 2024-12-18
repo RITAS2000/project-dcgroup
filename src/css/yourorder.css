@@ -313,6 +313,18 @@
     max-width: 428px;
   }
 }
+@media screen  and (max-width: 767px){
+  .form-but {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0px;
+    width: 100%;
+  }
+  
+
+  
+}
 
 .form-but:hover,
 .form-but:focus {
