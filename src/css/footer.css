@@ -112,7 +112,8 @@
   line-height: 1.43;
   color: #d4bfc4;
 }
-.link:hover {
+.link:hover,
+.link:focus {
   transform: scale(1.1);
 }
 
