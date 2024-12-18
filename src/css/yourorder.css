@@ -324,7 +324,7 @@
 .form-but:active {
   background: #fbfbfb;
   color: #7a3145;
-  border: #d4bfc4
+  border: 1px solid #d4bfc4
 }
 
 .order-form {
