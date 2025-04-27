@@ -1,6 +1,6 @@
-var modalBtnOpen = document.querySelector('.js-open-modal');
-var modalBtnClose = document.querySelector('.js-close-modal');
-var modal = document.querySelector('.js-modal');
+const modalBtnOpen = document.querySelector('.js-open-modal');
+const modalBtnClose = document.querySelector('.js-close-modal');
+const modal = document.querySelector('.js-modal');
 
 modalBtnOpen.addEventListener('click', toggleModal);
 modalBtnClose.addEventListener('click', toggleModal);
@@ -11,13 +11,25 @@ function toggleModal() {
 
 const images = document.querySelectorAll('.clickable-image');
 
-// Отримуємо textarea
 const textarea = document.getElementById('text-area');
 
-// Додаємо обробник подій для кожного зображення
 images.forEach(image => {
-    image.addEventListener('click', () => {
-        // Додаємо alt текст до textarea з нового рядка
-        textarea.value += (textarea.value ? '\n' : '') + image.alt;
-    });
-})
+  image.addEventListener('click', () => {
+    textarea.value += (textarea.value ? '\n' : '') + image.alt;
+  });
+});
+
+const menuLinks = document.querySelectorAll('.mobile-menu-link');
+const shop = document.querySelector('.shop-button');
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', function () {
+    document.querySelector('.mobile-menu-backdrop').classList.remove('is-open');
+    document.querySelector('.mobile-menu').classList.remove('is-open');
+  });
+});
+
+shop.addEventListener('click', function () {
+  document.querySelector('.mobile-menu-backdrop').classList.remove('is-open');
+  document.querySelector('.mobile-menu').classList.remove('is-open');
+});
